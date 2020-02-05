@@ -1,3 +1,5 @@
+
+/* CSS Principale*/
 body {
     background: url('images/BACKGROUND/background_village.png') no-repeat ;
     background-size: contain;
@@ -17,6 +19,3 @@ body {
     margin-right: 20px ;
 }
 
-#nav2{
-
-}
