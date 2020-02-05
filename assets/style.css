@@ -1,0 +1,11 @@
+body {
+    background: url('images/BACKGROUND/background_village.png') no-repeat ;
+    background-size: contain;
+    margin: 0;
+    
+}
+
+#fond{
+    background: url("images/BACKGROUND/bande_milieu.png") no-repeat ;
+
+}
