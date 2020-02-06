@@ -10,6 +10,8 @@ body {
 #blanco{
     background: url('images/BACKGROUND/bande_fond_teste.png') no-repeat;
     background-size: cover;
+    -webkit-box-shadow: -3px 6px 9px 0px #000000; 
+box-shadow: -3px 6px 9px 1px #000000;
 }
 
 #bande3{
