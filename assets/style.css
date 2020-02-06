@@ -1,0 +1,21 @@
+
+/* CSS Principale*/
+body {
+    background: url('images/BACKGROUND/background_village.png') no-repeat ;
+    background-size: contain;
+    background-color: gray;
+}
+
+#fond{
+    background: url("images/BACKGROUND/bande_milieu.png") no-repeat ;
+}
+
+#fond_nav{
+    background: url("images/HEADER/3_bandes.png") no-repeat;
+    
+}
+
+#nav1{
+    margin-right: 20px ;
+}
+

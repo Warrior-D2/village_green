@@ -1,0 +1,33 @@
+
+/* CSS liée a la feuilletest.html */
+
+body {
+    background: url('images/BACKGROUND/background_village.png') no-repeat;
+    background-size: cover;
+}
+
+#blanco{
+    background: url('images/BACKGROUND/bande_fond_teste.png') no-repeat;
+    background-size: cover;
+}
+
+#bande3{
+    background: url('images/HEADER/3_bandes.png') no-repeat;
+}
+#nav1 a
+{
+    text-align: center;
+    color: navy;
+}
+
+#nav2 a
+{
+    padding-right: 100px;
+    color: white;
+    font-size: larger;
+}
+#nav3 a
+{
+    padding-right: 27px;
+    color: white;
+}
