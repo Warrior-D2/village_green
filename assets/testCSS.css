@@ -10,7 +10,9 @@ body {
 #blanco{
     background: url('images/BACKGROUND/bande_fond_teste.png') no-repeat;
     background-size: cover;
+    padding: 0px;
 }
+
 
 /**fond bande de couleur**/
 #bande3{
@@ -44,7 +46,17 @@ body {
 
 /*--------------------------------- CSS Formulaire d'inscription -----------------------------------*/
 
-
+section {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+fieldset{
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
 input {
-    background-color: #f1f1f1;
+    background-color: darkmagenta;
+}
+#bouton {
+    background: url("assets/images/BODY/ESPACE CLIENT/bouton valider.png");
 }
