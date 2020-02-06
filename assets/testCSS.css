@@ -1,19 +1,18 @@
-
 /* CSS liée a la feuilletest.html */
 
 body {
     background: url('images/BACKGROUND/background_village.png') no-repeat;
     background-size: cover;
-    
+
 }
 
-#blanco{
+#blanco {
     background: url('images/BACKGROUND/bande_fond_teste.png') no-repeat;
     background-size: cover;
-    -webkit-box-shadow: -3px 6px 9px 0px #000000; 
-box-shadow: -3px 6px 9px 1px #000000;
+    -webkit-box-shadow: -3px 6px 9px 0px #000000;
+    box-shadow: -3px 6px 9px 1px #000000;
 }
 
-#bande3{
+#bande3 {
     background: url('images/HEADER/3_bandes.png') no-repeat;
 }
