@@ -1,33 +1,50 @@
-
 /* CSS liée a la feuilletest.html */
 
+/*--------------------------------- Background Image -----------------------------------*/
 body {
     background: url('images/BACKGROUND/background_village.png') no-repeat;
     background-size: cover;
 }
 
+/**fond header blanc**/
 #blanco{
     background: url('images/BACKGROUND/bande_fond_teste.png') no-repeat;
     background-size: cover;
 }
 
+/**fond bande de couleur**/
 #bande3{
     background: url('images/HEADER/3_bandes.png') no-repeat;
 }
+
+/**barre de navigation**/
 #nav1 a
 {
     text-align: center;
     color: navy;
+    font-size: medium;
+    font-weight: bold;
 }
-
 #nav2 a
 {
-    padding-right: 100px;
+    padding-right: 80px;
     color: white;
-    font-size: larger;
+    font-size: 25px;
+    font-weight: bold;
 }
 #nav3 a
 {
-    padding-right: 27px;
+    padding-right: 10px;
     color: white;
+    font-size: 20px;
+}
+
+
+
+
+/*--------------------------------- CSS Formulaire d'inscription -----------------------------------*/
+
+
+input {
+    background-color: #f1f1f1;
 }
