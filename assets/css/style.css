@@ -1,14 +1,13 @@
-/* CSS liée a la feuilletest.html */
 
 /*--------------------------------- Background Image -----------------------------------*/
 body {
-    background: url('images/BACKGROUND/background_village.png') no-repeat;
+    background: url('../images/BACKGROUND/background_village.png') no-repeat;
     background-size: cover;
 }
 
 /**fond header blanc**/
 #blanco{
-    background: url('images/BACKGROUND/bande_fond_teste.png') no-repeat;
+    background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
     background-size: cover;
     padding: 0px;
 }
@@ -16,7 +15,7 @@ body {
 
 /**fond bande de couleur**/
 #bande3{
-    background: url('images/HEADER/3_bandes.png') no-repeat;
+    background: url('../images/HEADER/3_bandes.png') no-repeat;
 }
 
 /**barre de navigation**/
@@ -43,12 +42,10 @@ body {
 
 
 
-
 /*--------------------------------- CSS Formulaire d'inscription -----------------------------------*/
 
 section {
-    padding-right: 15px;
-    padding-left: 15px;
+
 }
 fieldset{
     margin-right: auto !important;
@@ -58,5 +55,5 @@ input {
     background-color: darkmagenta;
 }
 #bouton {
-    background: url("assets/images/BODY/ESPACE CLIENT/bouton valider.png");
+    background: url("../images/BODY/ESPACE CLIENT/bouton valider.png");
 }

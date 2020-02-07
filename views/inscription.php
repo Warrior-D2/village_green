@@ -3,7 +3,7 @@ require("header.php");
 ?>
 
 
-<section id="blanco">
+<section id="blanco" class=" pt-5 pl-5">
     <form action="#" method="POST" >
 
     <!------- Création des identifiant de connexion-------->
@@ -17,7 +17,7 @@ require("header.php");
         </div>
 
         <div class="form-group row">
-            <label for="password1" class="col-lg-2 col-md-2 text-right" >Créez votre mot de passe</label>
+            <label for="password1" class="col-lg-1 col-md-1 text-right" >Créez votre mot de passe</label>
             <div class="col-lg-3 col-md-3">
             <input type="password" class="form-control" id="password1">
             </div>
@@ -43,7 +43,7 @@ require("header.php");
                 <input type="text" class="form-control" id="nom">
                 </div>
             </div>
-    
+
             <div class="form-group row">
                 <label for="prenom" class="col-lg-2 col-md-2 text-right">Prénom</label>
                 <div class="col-lg-6 col-md-6">
@@ -88,6 +88,10 @@ require("header.php");
         </div>
         
         <!------- Saisies des numéro de contacts-------->
+
+
+
+
         <div class="col-6">
         <div class="form-group row">
             <label for="portable" class="col-lg-2 col-md-2 text-right">Numéro de Portable</label>

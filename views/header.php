@@ -8,7 +8,7 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <!-- CSS liée -->
-    <link href="assets/testCSS.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
     <title>Bienvenue sur notre site</title>
 </head>
 
@@ -21,7 +21,7 @@
 
                     <!-- logo Village green -->
                     <div class="col-3 p-0">
-                        <img src="assets/images/HEADER/logo_village_green.png" alt="">
+                        <img src="../assets/images/HEADER/logo_village_green.png" alt="">
                     </div>
 
                     <!-- les barres de navigation -->
@@ -29,17 +29,17 @@
                         <nav id="nav1" class="nav justify-content-end pt-1">
                             <a class="nav-link active" href="#!">Infos</a>
                             <a class="nav-link active" href="#!">Espace client</a>
-                            <a class="nav-link" href="#!"><img src="assets/images/HEADER/picto_panier.png"alt="logo panier"></a>
-                            <a class="nav-link pr-3 pl-5" href="#!"><img src="assets/images/HEADER/picto_pays.png" alt="logo pays"></a>
+                            <a class="nav-link" href="#!"><img src="../assets/images/HEADER/picto_panier.png"alt="logo panier"></a>
+                            <a class="nav-link pr-3 pl-5" href="#!"><img src="../assets/images/HEADER/picto_pays.png" alt="logo pays"></a>
                         </nav>
-    
+
                         <nav id="nav2" class="nav justify-content-end p-0 pt-1">
                             <a class="nav-link active " href="#!">Produits</a>
                             <a class="nav-link active " href="#!">Service</a>
                             <a class="nav-link active " href="#!">Aide</a>
                             <a class="nav-link active " href="#!">A propos</a>
                         </nav>
-    
+
                         <nav id="nav3" class="nav justify-content-end p-0 pt-12 pr-4">
                             <a class="nav-link active" href="#!">Guit/Bass</a>
                             <a class="nav-link active" href="#!">Batteries</a>
@@ -56,3 +56,11 @@
         </header>
 
     </div>
+
+
+
+
+
+
+
+
