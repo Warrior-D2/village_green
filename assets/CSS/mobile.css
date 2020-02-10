@@ -1,0 +1,66 @@
+/* Media Query pour Village green*/
+@media screen and (max-width: 768px) {
+
+    #logo {
+        width: auto;
+        height: 190px;
+    }
+
+    #nav2 a {
+        padding-right: 30px;
+        margin: auto;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        
+    }
+    #nav3 {
+        display: none;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 415px){
+    #logo{
+        display: none;
+    }
+
+    #nav1 a{
+        padding-right: 6px;
+    }
+
+    #nav2 a{
+        padding-right: 10px;
+        font-size: 15px;
+        color: seashell;
+
+    }
+    #nav3 a{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 411px) {
+
+    body {
+        background-image: url('assets/images/stop_it.jpg') no-repeat !important;
+    }
+    #blanco {
+        display: none;
+    }
+    #minus {
+        display: none;
+    }
+}

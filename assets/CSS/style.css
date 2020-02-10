@@ -1,0 +1,53 @@
+/* CSS liée a la villageA.html */
+
+body {
+    background: url('images/BACKGROUND/background_village.png') no-repeat;
+    background-size: contain;
+    background-color: gray;
+
+}
+
+#blanco {
+    background: url('images/BACKGROUND/bande_fond_teste.png') no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: -13px 14px 15px -3px #000000;
+    box-shadow: -13px 14px 15px -3px #000000;
+}
+
+#bande3 {
+    background: url('images/HEADER/3_bandes.png') no-repeat;
+}
+
+/**barre de navigation**/
+#nav1 a {
+    text-align: center;
+    color: navy;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#nav2 a {
+    padding-right: 80px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#nav3 a {
+    padding-right: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+/* corps site */
+
+
+
+
+/* Nos catégories */
+
+#imgg{
+    width: 291px;
+    height: 300px;
+    
+}
