@@ -1,4 +1,6 @@
-/*--------------------------------- Style general -----------------------------------*/
+/* Feuille de style CSS de Village green ! */
+
+/* ============ Style general ============*/
 body {
     background: url('../images/BACKGROUND/background_village.png') no-repeat;
     background-size: contain;
@@ -14,6 +16,7 @@ body {
     box-shadow: -13px 14px 15px -3px #000000; 
 }
 
+/* ============ CSS des Nav ============ */
 /* logo haut gauche */
 #logo{
     width: 300px;
@@ -51,7 +54,7 @@ body {
     -webkit-box-shadow: -8px 1px 7px 0px rgba(0, 0, 0, 0.8);
     box-shadow: -8px 1px 7px 0px rgba(0, 0, 0, 0.8);
 }
-/*============= Accueil CSS ======================================================================= */
+/*============ Accueil CSS ============ */
 
 /* couleur h3*/
 #navy {
@@ -64,10 +67,17 @@ body {
     height: 180px;
 }
 
+/* ============ Test popovers ============ */
+/* 
+.popover-body{
+    
+}  
+ */
 
 
 
-/*--------------------------------- CSS Formulaire d'inscription -----------------------------------*/
+
+/*============ CSS Formulaire d'inscription ============*/
 #blanc {
     background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
     background-size: cover;
@@ -75,6 +85,7 @@ body {
     -webkit-box-shadow: -13px 14px 15px -3px #000000;
     box-shadow: -13px 14px 15px -3px #000000; 
 }
+
 legend {
     color: rgb(0, 0, 88);
 }
@@ -92,8 +103,3 @@ input {
     background-color: #BBBBBB;
 }
 
-
-
-/* affiche le texte en corps 16px lorsque le média dispose d'une largeur d'affichage au minimum de 780px */
-@media (max-width: 1024px) {
-    label {}

@@ -25,11 +25,11 @@ include("header.php");
 
 
     <!-- Catégorie d'instruments -->
-    <section id="minus">
+    <section>
         <div class="row m-3">
-            <h3><strong>Nos catégories</strong></h3>
+            <h3 id="navy"><strong>Nos catégories</strong></h3>
         </div>
-        <div class="row row-cols-4">
+        <div class="row row-cols-4 d-flex flex-wrap">
             <div class="col pr-0">
                 <a href=""><img class="img-fluid" id="imgg" src="../public/images/BODY/CATEGORIES_guitare.png" alt="CATEGORIES_guitare"></a>
             </div>
@@ -43,9 +43,9 @@ include("header.php");
                 <a href=""><img class="img-fluid" id="imgg" src="../public/images/BODY/CATEGORIES_micro.png" alt="CATEGORIES_micro"></a>
             </div>
         </div>
-        <div class="row row-cols-4">
+        <div class="row row-cols-4  d-flex flex-wrap">
             <div class="col pr-0">
-                <a href=""><img class="img-fluid" id="imgg" src="../public/images/BODY/CATEGORIES_sono.png" alt="CATEGORIES_sono"></a id="img">
+                <a href=""><img class="img-fluid" id="imgg" src="../public/images/BODY/CATEGORIES_sono.png" alt="CATEGORIES_sono"></a>
             </div>
             <div class="col p-0">
                 <a href=""><img class="img-fluid" id="imgg" src="../public/images/BODY/CATEGORIES_cases.png" alt="CATEGORIES_cases"></a>
@@ -62,10 +62,10 @@ include("header.php");
 
 
     <!-- Meilleures ventes / Partenaires -->
-    <section id="minus">
+    <section>
         <div class="row pl-3 pb-3">
             <div class="col-7">
-                <h3 class="mt-5"><strong>Nos meilleurs ventes</strong></h3>
+                <h3 id="navy" class="mt-5"><strong>Nos meilleurs ventes</strong></h3>
                 <div class="row d-flex justify-content-around">
                     <div>
                         <img class="img-fluid" src="../public/images/BODY/TOP_VENTES_guitare.png" alt="Top vente guitare">
@@ -79,7 +79,7 @@ include("header.php");
                 </div>
             </div>
             <div class="col-5">
-                <h3 class="mt-5"><strong>Nos partenaires</strong></h3>
+                <h3 id="navy" class="mt-5"><strong>Nos partenaires</strong></h3>
                 <img class="img-fluid" id="reglage" src="../public/images/BODY/partenaires_4_logos.png" alt="4 logo partenaires">
             </div>
         </div>

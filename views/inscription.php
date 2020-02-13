@@ -88,7 +88,9 @@ require("header.php");
                     </div>
                 </div>
 
-                <div class="span border border-secondary" id="cadre_numero">
+
+                <!--  Truck gratuit en bas   -->
+                <div class="border border-secondary " id="cadre_numero">
                     <h3 id="orange" class="text-center mb-5 mt-2">Vos numéros de téléphone</h3>
 
                     <div class="form-group row">
@@ -104,11 +106,12 @@ require("header.php");
                             <input type="text" class="form-control" id="telephone">
                         </div>
                     </div>
-                    <img class="img-fluid" src="../public/images/BODY/ESPACE CLIENT/CADRE numero1.png">
+                    <img id="SMS" class="img-fluid" src="../public/images/BODY/ESPACE CLIENT/CADRE numero1.png">
                 </div>
 
         </fieldset>
 
+    <!-- Button VALIDER -->
         <div class="row justify-content-center img-fluid">
             <button class="btn btn-sm " type="submit" value="Valider"><img class="img-fluid" src="../public/images/BODY/ESPACE CLIENT/bouton valider.png" alt="bouton valider"></button>
         </div>
