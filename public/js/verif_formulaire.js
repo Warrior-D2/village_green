@@ -1,249 +1,257 @@
 /* -------------------Page de vérification du formulaire -------------------------*/
 
 
-// fonction qui suppr: -espace -antislash -caractères spéciaux des input
-function test_input($data)
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
-
 // déclaration du formulaire
 var form = document.getElementById("form");
+console.log(form);
 
-
-form.addEventListener("submit", function(event)
-{
-
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    // récupération des valeurs des champs input avec l'ID
     var email = document.getElementById("email");
     var errorEmail = document.getElementById("errorEmail");
-    var regexEmail = /^[A-Za-z]+$/;
+    var regexEmail = /^[^\W][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\@[a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\.[a-zA-Z]{2,4}$/;
 
     var password1 = document.getElementById("password1");
-    var regexPassword1 = /^[A-Za-z]+$/;
+    var errorPassword1 = document.getElementById("errorPassword1");
+    var regexPassword1 = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{8,15})$/;
 
     var password2 = document.getElementById("password2");
-    var regexPassword2 = /^[A-Za-z]+$/;
+    var errorPassword2 = document.getElementById("errorPassword2");
+    var regexPassword2 = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{8,15})$/;
 
     var prenom = document.getElementById("prenom");
-    var regexPrenom = ??????;
+    var errorPrenom = document.getElementById("errorPrenom");
+    var regexPrenom = /[a-zA-Z\é\è\-\ï\ë\î]$/;
 
     var nom = document.getElementById("nom");
-    var regexNom = ??????;
+    var errorNom = document.getElementById("errorNom");
+    var regexNom = /[a-zA-Z\é\è\-\ï\ë\î]$/;
 
     var adresse = document.getElementById("adresse");
-    var regexAdresse = ??????;
+    var errorAdresse = document.getElementById("errorAdresse");
+    var regexAdresse = /^[0-9]{1,3}(?:(?:[,. ]){1}[-a-zA-Zàâäéèêëïîôöùûüç]+)*$/;
 
     var complement = document.getElementById("complement");
-    var regexComplment = ??????;
+    var errorComplement = document.getElementById("errorComplement");
+    var regexComplement = /^[0-9]{1,3}(?:(?:[,. ]){1}[-a-zA-Zàâäéèêëïîôöùûüç]+)*$/;
 
     var code_postal = document.getElementById("codepostal");
-    var regexCode = ??????;
+    var errorCode = document.getElementById("errorCode");
+    var regexCode = /^[0-9]{5,5}$/;
 
     var ville = document.getElementById("ville");
-    var regexVille = ??????;
+    var errorVille = document.getElementById("errorVille");
+    var regexVille = /[a-zA-Z\é\è\-\ï\ë\î]$/
 
     var pays = document.getElementById("pays");
-    var regexPays = ??????;
+    var errorPays = document.getElementById("errorPays");
+    var regexPays = /[a-zA-Z\é\è\-\ï\ë\î]$/
 
-    var potable = document.getElementById("portable");
-    var regexPortable = ??????;
+    var portable = document.getElementById("portable");
+    var errorPortable = document.getElementById("errorPortable");
+    var regexPortable = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/;
 
     var telephone = document.getElementById("telephone");
-    var regexTelephone = ??????;
+    var errorTelephone = document.getElementById("errorTelephone");
+    var regexTelephone = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/;
 
 
 
-    // Vérification du nom
+    //Vérification de l'email
 
-    if (name.value.trim() == "")  // le champs est vide
+    if (email.value == "") //champs vide
     {
-        var errorName = document.getElementById("errorName");
-        errorName.innerHTML = "Ce champs est requis";
-        errorName.style.color = "red";
-        event.preventDefault(); // permet de bloquer l'envoye du formulaire
-    }else if (RegExpName.test (name.value) == false) // la regex n'est respecté
+        errorEmail.innerHTML = "Ce champs est requis";
+        errorEmail.style.color = "red";
+        event.preventDefault(); // bloque l'envoye du formulaire
+    } else if (regexEmail.test(email.value) == false) // si la saisie du champs ne corespond pas avec la regex
     {
-        errorName = document.getElementById("errorName");
-        errorName.innerHTML = "Ce champs doit comporter des lettres uniquement";
-        errorName.style.color = "orange";
+        errorEmail.innerHTML = "Veuilllez saisir une adresse email valide";
+        errorEmail.style.color = "orange";
         event.preventDefault();
-    }else                       // la saisie est accepté
-    {
-        errorName = document.getElementById("errorName");
-        errorName.innerHTML = "C'est bon !";
-        errorName.style.color = "green";
+    } else {
+        errorEmail.innerHTML = "ok !";
+        errorEmail.style.color = "green";
     }
 
 
+    //Vérification du mot de passe
+
+    if (password1.value == "") {
+        errorPassword1.innerHTML = "Ce champs est requis";
+        errorPassword1.style.color = "red";
+        event.preventDefault();
+    } else if (regexPassword1.test(password1.value) == false) {
+        errorPassword1.innerHTML = "Le mot de passe doit comporter au minimum 8 caractères dont une majuscule, une minuscule, un chiffre et un caractères spécial";
+        errorPassword1.style.color = "orange";
+        event.preventDefault();
+    } else {
+        errorPassword1.innerHTML = "ok !";
+        errorPassword1.style.color = "green";
+    }
 
 
-    // Vérification du prénom
+    //Vérification de la confirmation du mot de passe
 
-    if (prenom.value.trim() == "")  // trim retire les espaces au debut et entre les mots
-    {
-        var errorPrenom = document.getElementById("errorPrenom");
-        errorPrenom.innerHTML = "Ce champs est requis";  //inner html permet d'afficher du texte dans la page html
+    if (password2.value == "") {
+        errorPassword2.innerHTML = "Ce champs est requis";
+        errorPassword2.style.color = "red";
+        event.preventDefault();
+    } else if (regexPassword2.test(password2.value) == false) {
+        errorPassword2.innerHTML = "Le mot de passe doit comporter au minimum 8 caractères dont une majuscule, une minuscule, un chiffre et un caractères spécial";
+        errorPassword2.style.color = "orange";
+        event.preventDefault();
+    } else {
+        errorPassword2.innerHTML = "ok !";
+        errorPassword2.style.color = "green";
+    }
+
+
+    //Vérification du Prénom
+
+    if (prenom.value == "") {
+        errorPrenom.innerHTML = "Ce champs est requis";
         errorPrenom.style.color = "red";
-        event.preventDefault(); 
-    }else if (RegExpName.test (prenom.value) == false) // .test permet de vérifier la valeur de la variable par rapport au regex 
-    {
-        errorPrenom = document.getElementById("errorPrenom");
-        errorPrenom.innerHTML = "Ce champs doit comporter des lettres uniquement";
+        event.preventDefault();
+    } else if (regexPrenom.test(prenom.value) == false) {
+        errorPrenom.innerHTML = "Ce champs ne peut contenir que des lettres ou des accents";
         errorPrenom.style.color = "orange";
         event.preventDefault();
-    }else
-    {
-        errorPrenom = document.getElementById("errorPrenom");
-        errorPrenom.innerHTML = "C'est bon !";
+    } else {
+        errorPrenom.innerHTML = "ok !";
         errorPrenom.style.color = "green";
     }
 
 
 
-    // Vérification du sexe (radio)
+    //Vérification du Nom
 
-    if ((!male ) && (!female))
-    {
-        var error = document.getElementById("error");
-        error.innerHTML = "Ce champs est requis";
-        error.style.color = "red";
+    if (nom.value == "") {
+        errorNom.innerHTML = "Ce champs est requis";
+        errorNom.style.color = "red";
         event.preventDefault();
-    }else
-    {
-        error = document.getElementById("error");
-        error.innerHTML = "C'est bon !";
-        error.style.color = "green"; 
-    }
-    
-
-
-    //Vérification de la date
-
-    if (date.value.trim() == "")
-    {
-        var errorDate = document.getElementById("errorDate");
-        errorDate.innerHTML = "Ce champs est requis";
-        errorDate.style.color = "red";
+    } else if (regexNom.test(nom.value) == false) {
+        errorNom.innerHTML = "Ce champs ne peut contenir que des lettres ou des accents";
+        errorNom.style.color = "orange";
         event.preventDefault();
-    }else if (RegExpDate.test (date.value) == false)
-    {
-        errorDate = document.getElementById("errorDate");
-        errorDate.innerHTML = "Ce champs doit être de la forme jj/mm/aa";
-        errorDate.style.color = "orange";
-        event.preventDefault();
-    }else
-    {
-        errorDate = document.getElementById("errorDate");
-        errorDate.innerHTML = "C'est bon !";
-        errorDate.style.color = "green"; 
+    } else {
+        errorNom.innerHTML = "ok !";
+        errorNom.style.color = "green";
     }
 
-
-    /*//Vérification du code postal
-
-    if (cp.value.trim() == "")  
-    {
-        var errorCode = document.getElementById("errorCode");
-        errorCode.innerHTML = "Ce champs est requis";
-        errorCode.style.color = "red";
-        event.preventDefault();
-    }else if (RegExpCp.test (cp.value) == false)
-    {
-        errorCode = document.getElementById("errorCode");
-        errorCode.innerHTML = "Ce champs peut comporter 5 chiffres uniquement";
-        errorCode.style.color = "orange";
-        event.preventDefault();
-    }else
-    {
-        errorCode = document.getElementById("errorCode");
-        errorCode.innerHTML = "C'est bon !";
-        errorCode.style.color = "green"; 
-    }
-    
 
     //Vérification de l'adresse
 
-    if (adresse.value.trim() == "")  
-    {
-        var errorAdresse = document.getElementById("errorAdresse");
+    if (adresse.value == "") {
         errorAdresse.innerHTML = "Ce champs est requis";
         errorAdresse.style.color = "red";
         event.preventDefault();
-    }else if (RegExpAdresse.test (adresse.value) == false)
-    {
-    errorAdresse = document.getElementById("errorAdresse");
-    errorAdresse.innerHTML = "Ce champs peut comporter des lettres et des chiffres";
-    errorAdresse.style.color = "orange";
-    event.preventDefault();
-    }else
-    {
-        errorAdresse = document.getElementById("errorAdresse");
-        errorAdresse.innerHTML = "C'est bon !";
-        errorAdresse.style.color = "green"; 
-    }*/
-
-
-    // Vérification de l'email
-
-    if (email.value.trim() == "")  
-    {
-        var errorEmail = document.getElementById("errorEmail");
-        errorEmail.innerHTML = "Ce champs est requis";
-        errorEmail.style.color = "red";
+    } else if (regexAdresse.test(adresse.value) == false) {
+        errorAdresse.innerHTML = "Veuilllez saisir une adresse valide";
+        errorAdresse.style.color = "orange";
         event.preventDefault();
-    }else if (RegExpMail.test (email.value) == false)
-    {
-    errorEmail = document.getElementById("errorEmail");
-    errorEmail.innerHTML = "Entrez une adresse email valide";
-    errorEmail.style.color = "orange";
-    event.preventDefault();
-    }else
-    {
-        errorEmail = document.getElementById("errorEmail");
-        errorEmail.innerHTML = "C'est bon !";
-        errorEmail.style.color = "green"; 
+    } else {
+        errorAdresse.innerHTML = "ok !";
+        errorAdresse.style.color = "green";
     }
 
 
-    // Vérification du sujet selectionner
-    if (demande.value == "Sélectionnez une option")
-    {
-        var errorDemande = document.getElementById("errorDemande");
-        errorDemande.innerHTML = "Vous devez sélectionner une option!";
-        errorDemande.style.color = "red";
-        event.preventDefault();
-    }else
-    {
-        errorDemande = document.getElementById("errorDemande");
-        errorDemande.innerHTML = "ok!";
-        errorDemande.style.color = "green";
+    //Vérification du complément d'adresse
 
+    if (complement.value == "") {
+        errorComplement.innerHTML = "Ce champs est requis";
+        errorComplement.style.color = "red";
+        event.preventDefault();
+    } else if (regexComplement.test(complement.value) == false) {
+        errorComplement.innerHTML = "Ce champs n'est pas valide";
+        errorComplement.style.color = "orange";
+        event.preventDefault();
+    } else {
+        errorComplement.innerHTML = "ok !";
+        errorComplement.style.color = "green";
     }
 
-    //Vérification du message
-    if (message.value.trim() == "") { 
-        var errorMessage = document.getElementById("errorMessage");
-        errorMessage.innerHTML = "Ce champs est requis.";
-        errorMessage.style.color = "red";
-        e.preventDefault(); 
-    }else{
-        var errorMessage = document.getElementById("errorMessage");
-        errorMessage.innerHTML = "ok!";
-        errorMessage.style.color = "green";
+
+
+    //Vérification du code postal
+
+    if (code_postal.value == "") {
+        errorCode.innerHTML = "Ce champs est requis";
+        errorCode.style.color = "red";
+        event.preventDefault();
+    } else if (regexCode.test(code_postal.value) == false) {
+        errorCode.innerHTML = "Ce champs ne peut contenir que des chiffres";
+        errorCode.style.color = "orange";
+        event.preventDefault();
+    } else {
+        errorCode.innerHTML = "ok !";
+        errorCode.style.color = "green";
     }
 
-    // Vérification du checkbox (traitement informatique)
+    //Vérification de la ville
 
-    if (checkbox.checked == false )
-    {
-        var errorCheckbox = document.getElementById("errorCheckbox");
-        errorCheckbox.innerHTML = "Vous devez cocher cette case !";
-        errorCheckbox.style.color = "red";
+    if (ville.value == "") {
+        errorVille.innerHTML = "Ce champs est requis";
+        errorVille.style.color = "red";
         event.preventDefault();
-    } 
-} );
+    } else if (regexVille.test(ville.value) == false) {
+        errorVille.innerHTML = "Ce champs ne peut comporter que des lettres";
+        errorVille.style.color = "orange";
+        event.preventDefault();
+    } else {
+        errorVille.innerHTML = "ok !";
+        errorVille.style.color = "green";
+    }
 
 
+    //Vérification du Pays
+
+    if (pays.value == "") {
+        errorPays.innerHTML = "Ce champs est requis";
+        errorPays.style.color = "red";
+        event.preventDefault();
+    } else if (regexPays.test(pays.value) == false) {
+        errorPays.innerHTML = "Ce champs n'est pas valide";
+        errorPays.style.color = "orange";
+        event.preventDefault();
+    } else {
+        errorPays.innerHTML = "ok !";
+        errorPays.style.color = "green";
+    }
+
+
+
+    //Vérification du numéro de Portable
+
+    if (portable.value == "") {
+        errorPortable.innerHTML = "Ce champs est requis";
+        errorPortable.style.color = "red";
+        event.preventDefault();
+    } else if (regexPortable.test(portable.value) == false) {
+        errorPortable.innerHTML = "Veuilllez saisir une adresse Portable valide";
+        errorPortable.style.color = "orange";
+        event.preventDefault();
+    } else {
+        errorPortable.innerHTML = "ok !";
+        errorPortable.style.color = "green";
+    }
+
+
+
+    //Vérification du numéro de téléphone fixe
+
+    if (telephone.value == "") {
+        errorTelephone.innerHTML = "Ce champs est requis";
+        errorTelephone.style.color = "red";
+        event.preventDefault();
+    } else if (regexTelephone.test(telephone.value) == false) {
+        errorTelephone.innerHTML = "Veuilllez saisir une adresse Telephone valide";
+        errorTelephone.style.color = "orange";
+        event.preventDefault();
+    } else {
+        errorTelephone.innerHTML = "ok !";
+        errorTelephone.style.color = "green";
+    }
+
+});
