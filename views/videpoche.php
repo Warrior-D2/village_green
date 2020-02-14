@@ -50,7 +50,7 @@
 
                     <!-- nav3 -->
                     <div class="row justify-content-end pr-5">
-                        <nav id="nav3" >
+                        <nav id="nav3">
                         <a href="#" role="button" title="" class="popovers  text-light" data-toggle="popover" data-html="true" 
                         data-content='
                         <a href="" title="test add link">Guitares Electriques</a><br>

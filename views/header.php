@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Les script sont en haut sinon ca fait bugé les popovers (Mais ils sont aussi dans le footer) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -63,10 +64,7 @@
                         <a href="" class="text-dark" title="">Ukulélés</a><br>
                         <a href="" class="text-dark" title="">Autres Instruments à cordes pincées</a>' data-original-title="">Guit/Bass</a>
 
-                            <a href="#" role="button" title=""class="popovers  text-light" data-toggle="popover" data-html="true" data-trigger="focus" data-content='<a href="" class="text-dark" title="test add link"></a>' data-original-title="">Batteries</a>
-
-                        
-                        
+                            <a href="#" role="button" title="" class="popovers  text-light" data-toggle="popover" data-html="true" data-trigger="focus" data-content='<a href="" class="text-dark" title="test add link"></a>' data-original-title="">Batteries</a>
                             <a href="#" role="button" title="" class="popovers  text-light" data-toggle="popover" data-html="true" data-trigger="focus" data-content='<a href="" title="test add link"></a>' data-original-title="">Clavier</a>
                             <a href="#" role="button" title="" class="popovers  text-light" data-toggle="popover" data-html="true" data-trigger="focus" data-content='<a href="" title="test add link"></a>' data-original-title="">Studio</a>
                             <a href="#" role="button" title="" class="popovers  text-light" data-toggle="popover" data-html="true" data-trigger="focus" data-content='<a href="" title="test add link"></a>' data-original-title="">Sono</a>
@@ -83,7 +81,7 @@
     <!-- Fin header -->
 
 
-    <!-- Script pour les popovers -->
+    <!-- Script pour les popovers (NE PAS TOUCHER SINON CA FONCTIONNE PAS) -->
     <script>
         $(document).ready(function() {
             $('[data-toggle="popover"]').popover({
