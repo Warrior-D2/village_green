@@ -79,6 +79,7 @@ body {
     background-image: url("../images/BODY/CATEGORIES_guitare.png");
     width: 292px;
     height: 180px;
+    
 }
 #img1:hover{
     background-image: url("../images/BODY/CATEGORIES_ROLL_OVER_guitare.png");
@@ -203,7 +204,7 @@ body {
     height: 304px;
 }
 #img11:hover{
-    background: url("../images/BODY/TOP_VENTES_ROLL_OVER_saxo.png");
+    background: url("../images/BODY/TOP_VENTES_ROLL_OVER_piano.png");
     width: 165px;
     height: 304px;
 }

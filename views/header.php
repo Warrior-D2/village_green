@@ -36,9 +36,15 @@
                 </div>
                 <div class="col-9 p-0 justify-content-end">
                     <!-- Nav1 -->
-                    <nav id="nav1" class="nav justify-content-end pt-1">
-                        <a class="nav-link active" href="#!">Infos</a>
-                        <a class="nav-link active" href="#!">Espace client</a>
+                    <nav id="nav1" class="nav justify-content-end pt-1 pr-5">
+                        <a class="nav-link active pr-3" href="#!">Infos</a>
+                        <a href="#" role="button" title="" class="popovers mt-2 pr-3" data-toggle="popover" data-html="true"
+                        data-trigger="focus" data-content='
+                        <p class="text-dark">Etes-vous déjà clients chez nous ?</p>
+                        <label>E-mail :</label><input type="text" class="" id="email" name="mail"
+                placeholder="exemple@mail.fr">
+                        ' data-original-title="">Espace client</a>
+
                         <a class="nav-link" href="#!"><img src="../public/images/HEADER/picto_panier.png" alt="logo panier"></a>
                         <a class="nav-link" href="#!"><img src="../public/images/HEADER/picto_pays.png" alt="logo pays"></a>
                     </nav>
@@ -51,10 +57,10 @@
                     </nav>
 
                     <!-- nav3 -->
-                    <div class="row justify-content-end pr-5">
+                    <div class="row justify-content-between">
                         <nav id="nav3">
-                            <a href="#" role="button" title="" class="popovers  text-light" data-toggle="popover" data-html="true"
-                            data-content='
+                            <a href="#" role="button" title="" class="popovers  text-light " data-toggle="popover" data-html="true"
+                            data-trigger="focus" data-content='
                         <a href="" class="text-dark" title="">Guitares Electriques</a><br>
                         <a href="" class="text-dark" title="">Guitares Classiques</a><br>
                         <a href="" class="text-dark" title="">Guitares Acoustiques & Electro-Acoustiques</a><br>
@@ -64,7 +70,7 @@
                         <a href="" class="text-dark" title="">Ukulélés</a><br>
                         <a href="" class="text-dark" title="">Autres Instruments à cordes pincées</a>' data-original-title="">Guit/Bass</a>
 
-                            <a href="#" role="button" title="" class="popovers  text-light" data-toggle="popover" data-html="true" data-trigger="focus" data-content='<a href="" class="text-dark" title="test add link"></a>' data-original-title="">Batteries</a>
+                            <a href="#" role="button" title="" class="popovers  text-light" data-toggle="popover" data-html="true" data-trigger="focus" data-content='<a href="" title="test add link"></a>' data-original-title="">Batteries</a>
                             <a href="#" role="button" title="" class="popovers  text-light" data-toggle="popover" data-html="true" data-trigger="focus" data-content='<a href="" title="test add link"></a>' data-original-title="">Clavier</a>
                             <a href="#" role="button" title="" class="popovers  text-light" data-toggle="popover" data-html="true" data-trigger="focus" data-content='<a href="" title="test add link"></a>' data-original-title="">Studio</a>
                             <a href="#" role="button" title="" class="popovers  text-light" data-toggle="popover" data-html="true" data-trigger="focus" data-content='<a href="" title="test add link"></a>' data-original-title="">Sono</a>

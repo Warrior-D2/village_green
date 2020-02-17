@@ -7,7 +7,7 @@ include("header.php");
     <div class=" col-12 d-flex justify-content-around">
         <div class="row">
             <div class="col-9 pr-5">
-                <img class="img-fluid mt-2" src="../public/images/BODY/pub_guitare.png" alt="Pub Guitare">
+                <img class="img-fluid mt-2 h-100" src="../public/images/BODY/pub_guitare.png" alt="Pub Guitare">
             </div>
             <div class="col-3 pl-5">
                 <img class="img-fluid mt-2" src="../public/images/BODY/banniere_droite_prix.png" alt="Bannière droite">
@@ -29,11 +29,11 @@ include("header.php");
         <div class="row m-3">
             <h3 id="navy"><strong>Nos catégories</strong></h3>
         </div>
-        <div class="row row-cols-4 d-flex flex-wrap">
+        <div class="row row-cols-4 d-flex flex-wrap pl-3">
 
             <!-- Guitare -->
             <a href="">
-                <div id="img1" class="col"></div>
+                <div id="img1" class="col p-0"></div>
             </a>
 
             <!-- Batterie -->
@@ -53,7 +53,7 @@ include("header.php");
 
         </div>
 
-        <div class="row row-cols-4  d-flex flex-wrap">
+        <div class="row row-cols-4  d-flex flex-wrap pl-3">
             <!-- Sono -->
             <a id="img5" href="">
                 <div class="col pr-0"></div>
