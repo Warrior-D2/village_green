@@ -128,7 +128,6 @@ require("header.php");
         </div>
     </form>
 
-
         <!---------------photos bas de page avec pictogramme-------------------->
         <div class="row p-3">
             <img class="img-fluid" src="../public/images/BODY/ESPACE CLIENT/bas de page pictos.png" alt="pictos partenaires">
