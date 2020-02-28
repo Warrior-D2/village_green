@@ -98,6 +98,8 @@ require("header.php");
                     </div>
                 </div>
 
+
+                <!--------------- Cadre Numero --------------------->
                 <div class="span border border-secondary" id="cadre_numero">
                     <h3 id="orange" class="text-center mb-5 mt-2">Vos numéros de téléphone</h3>
 
@@ -125,6 +127,7 @@ require("header.php");
             <button class="btn btn-sm " type="submit" value="Valider"><img class="img-fluid" src="../public/images/BODY/ESPACE CLIENT/bouton valider.png" alt="bouton valider"></button>
         </div>
     </form>
+
 
         <!---------------photos bas de page avec pictogramme-------------------->
         <div class="row p-3">

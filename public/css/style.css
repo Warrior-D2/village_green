@@ -9,7 +9,7 @@ body {
 #blanco {
     background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
     background-size: cover;
-    width: 1170px;
+    width: 102%;
     -webkit-box-shadow: -13px 14px 15px -3px #000000;
     box-shadow: -13px 14px 15px -3px #000000; 
 }
@@ -51,7 +51,7 @@ body {
     -webkit-box-shadow: -8px 1px 7px 0px rgba(0, 0, 0, 0.8);
     box-shadow: -8px 1px 7px 0px rgba(0, 0, 0, 0.8);
 }
-/*============= Accueil CSS ======================================================================= */
+/*=================================== Accueil CSS ================================================ */
 
 /* couleur h3*/
 #navy {
@@ -71,7 +71,7 @@ body {
 #blanc {
     background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
     background-size: cover;
-    width: 1170px;
+    width: 102%;
     -webkit-box-shadow: -13px 14px 15px -3px #000000;
     box-shadow: -13px 14px 15px -3px #000000; 
 }
@@ -91,9 +91,3 @@ input {
 #cadre_numero {
     background-color: #BBBBBB;
 }
-
-
-
-/* affiche le texte en corps 16px lorsque le média dispose d'une largeur d'affichage au minimum de 780px */
-@media (max-width: 1024px) {
-    label {}
