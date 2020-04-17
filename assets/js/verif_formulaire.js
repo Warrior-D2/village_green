@@ -1,6 +1,16 @@
 /* -------------------Page de vérification du formulaire -------------------------*/
 
 
+// fonction qui suppr: -espace -antislash -caractères spéciaux des input
+function test_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
+
 // déclaration du formulaire
 var form = document.getElementById("form");
 
@@ -119,8 +129,11 @@ form.addEventListener("submit", function (event) {
         event.preventDefault();
     } else {
         errorPrenom.innerHTML = "ok !";
+
+
         errorPrenom.style.color = "green";
     }
+
 
 
 
@@ -254,3 +267,4 @@ form.addEventListener("submit", function (event) {
     }
 
 });
+

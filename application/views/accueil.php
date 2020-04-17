@@ -1,21 +1,30 @@
 <?php
-include("header.php");
+$title ='Village Green : Accueil';
 ?>
 
-    <div class="row d-flex justify-content-around">
+<?php ob_start(); ?>
+
+<!--  Pub gitare & livraison prix  -->
+<section class="row" id="blanco">
+    <div class=" col-12 d-flex justify-content-around">
+        <div class="row">
             <div class="col-9 pr-5">
-                <img class="img-fluid mt-2 h-100" src="../public/images/BODY/pub_guitare.png" alt="Pub Guitare">
+                <img class="img-fluid mt-2 h-100" src="<?= base_url('assets/images/BODY/pub_guitare.png'); ?>" alt="Pub Guitare">
             </div>
             <div class="col-3 pl-5">
-                <img class="img-fluid mt-2" src="../public/images/BODY/banniere_droite_prix.png" alt="Bannière droite">
+                <img class="img-fluid mt-2" src="<?= base_url('assets/images/BODY/banniere_droite_prix.png'); ?>" alt="Bannière droite">
             </div>
+        </div>
     </div>
 
 
     <!-- bande centrale -->
     <div class="row">
-        <img class="col-12 mt-5" src="../public/images/BODY/banniere_centre_4_pictos.png" alt="">
+        <img class="col-12 mt-5" src="<?= base_url('assets/images/BODY/banniere_centre_4_pictos.png'); ?>" alt="">
     </div>
+
+
+
 
 
     <!-- Catégorie d'instruments -->
@@ -25,6 +34,8 @@ include("header.php");
         </div>
 
         <div class="row row-cols-4 d-flex flex-wrap pl-3">
+
+
             <!-- Guitare -->
             <a href="">
                 <div id="img1" class="col p-0"></div>
@@ -44,6 +55,7 @@ include("header.php");
             <a id="img4" href="">
                 <div class="col p-0"></div>
             </a>
+
         </div>
 
         <div class="row row-cols-4  d-flex flex-wrap pl-3">
@@ -63,12 +75,14 @@ include("header.php");
             <a id="img8" href="">
                 <div class="col p-0"></div>
             </a>
-        </div>
 
+        </div>
     </section>
 
 
+
     <!-- Meilleures ventes / Partenaires -->
+    <section>
         <div class="row pl-3 pb-3">
             <div class="col-7">
                 <h3 id="navy" class="mt-5"><strong>Nos meilleurs ventes</strong></h3>
@@ -80,14 +94,15 @@ include("header.php");
             </div>
             <div class="col-5">
                 <h3 id="navy" class="mt-5"><strong>Nos partenaires</strong></h3>
-                <img id="img12" class="img-fluid" id="reglage" src="../public/images/BODY/partenaires_4_logos.png" alt="4 logo partenaires">
+
+                <img id="img12" class="img-fluid" id="reglage" src="<?= base_url('assets/images/BODY/partenaires_4_logos.png'); ?>" alt="4 logo partenaires">
             </div>
         </div>
-    
+    </section>
+</section>
 
 
+<?php $content = ob_get_clean(); ?>
 
-<?php
-include("footer.php");
-?>
+<?php require('template.php'); ?>
 

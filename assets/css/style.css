@@ -1,6 +1,8 @@
+
 /* Feuille de style CSS de Village green ! */
 
 /* ============ Style general ============*/
+
 body {
     background: url('../images/BACKGROUND/background_village.png') no-repeat;
     background-size: contain;
@@ -20,6 +22,7 @@ body {
 /* ============ CSS des Nav ============ */
 /** logo haut gauche **/
 #logo {
+
     width: 300px;
     height: 200px;
 }
@@ -50,11 +53,14 @@ body {
     font-size: 20px;
 }
 
+
 /** image footer **/
+
 #bas {
     -webkit-box-shadow: -8px 1px 7px 0px rgba(0, 0, 0, 0.8);
     box-shadow: -8px 1px 7px 0px rgba(0, 0, 0, 0.8);
 }
+
 
 /*============ Accueil CSS ============ */
 
@@ -67,10 +73,12 @@ body {
 }
 
 
+
 /* couleur h3*/
 #navy {
     color: navy;
 }
+
 
 /* ============ Nos catégories ============ */
 /* Guitare */
@@ -82,9 +90,11 @@ body {
 }
 #img1:hover{
     background-image: url("../images/BODY/CATEGORIES_ROLL_OVER_guitare.png");
+
     width: 292px;
     height: 180px;
 }
+
 
 /*  batterie */
 #img2 {
@@ -216,13 +226,16 @@ body {
 
 
 /* ============ CSS Formulaire d'inscription ============ */
+
 #blanc {
     background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
     background-size: cover;
     width: 1170px;
     -webkit-box-shadow: -13px 14px 15px -3px #000000;
+
     box-shadow: -13px 14px 15px -3px #000000;
 }
+
 
 legend {
     color: rgb(0, 0, 88);
@@ -240,3 +253,4 @@ input {
 #cadre_numero {
     background-color: #BBBBBB;
 }
+

@@ -7,16 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
     
     <!-- -- Lien pour font -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS liée -->
-    <link rel="stylesheet" href="../public/css/style.css" >
-    <link rel="stylesheet" href="../public/css/mobile.css" >
+    <link href="<?= base_url('assets/css/style.css'); ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/mobile.css'); ?>" rel="stylesheet">
+
 
     <title>Bienvenue sur notre site</title>
 </head>
+
 
 
 <body>
