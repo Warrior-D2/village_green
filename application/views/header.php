@@ -8,7 +8,6 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-    
     <!-- -- Lien pour font -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -28,7 +27,7 @@
             <div id="bande3" class="row">
                 <!-- logo Village green -->
                 <div class="col-3 p-0">
-                    <img id ="logo" src="../public/images/HEADER/logo_village_green.png" alt="Logo Village Green">
+                    <img id ="logo" src="<?= base_url('assets/images/HEADER/logo_village_green.png'); ?>" alt="Logo Village Green">
                 </div>
 
                 <!-- les barres de navigation -->
@@ -43,8 +42,8 @@
                             <p class="text-dark">Etes-vous déjà clients chez nous ?</p>
                             <label>E-mail :</label><input type="text" class="" id="email" name="mail" placeholder="exemple@mail.fr">' 
                         data-original-title="">Espace client</a>
-                        <a class="nav-link" href="#!"><img src="../public/images/HEADER/picto_panier.png"alt="logo panier"></a>
-                        <a class="nav-link pr-3 pl-5" href="#!"><img src="../public/images/HEADER/picto_pays.png" alt="logo pays"></a>
+                        <a class="nav-link" href="#!"><img src="<?= base_url('assets/images/HEADER/picto_panier.png'); ?>" alt="logo panier"></a>
+                        <a class="nav-link pr-3 pl-5" href="#!"><img src="<?= base_url('assets/images/HEADER/picto_pays.png'); ?>" alt="logo pays"></a>
                     </nav>
 
                     <!--- 2nde bandes --->

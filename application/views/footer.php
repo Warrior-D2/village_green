@@ -4,7 +4,7 @@
 <!-- Footer pied de page -->
 <footer>
     <div class="row justify-content-center mt-2 pt-5">
-        <img id="bas" class="img-fluid" src="<?= base_url('assets/images/FOOTER/footer_revisiter.png); ?>" alt="Image_footer">
+        <img id="bas" class="img-fluid" src="<?= base_url('assets/images/FOOTER/footer_revisiter.png'); ?>" alt="Image_footer">
     </div>
 </footer>
 

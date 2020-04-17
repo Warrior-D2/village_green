@@ -114,19 +114,19 @@ require("header.php");
                         <span id="errorTelephone"></span>
                     </div>
                 </div>
-                <img class="img-fluid" src="../public/images/BODY/ESPACE CLIENT/CADRE numero1.png">
+                <img class="img-fluid" src="<?= base_url('assets/images/BODY/ESPACE CLIENT/CADRE numero1.png'); ?>">
             </div>
         </div>
     </fieldset>
     <!------Bouton valider----------->
     <div class="row justify-content-center img-fluid">
-        <button class="btn btn-sm" type="submit" value="Valider"><img class="img-fluid" src="../public/images/BODY/ESPACE CLIENT/bouton valider.png" alt="bouton valider"></button>
+        <button class="btn btn-sm" type="submit" value="Valider"><img class="img-fluid" src="<?= base_url('assets/images/BODY/ESPACE CLIENT/bouton valider.png'); ?>" alt="bouton valider"></button>
     </div>
 </form>
 
 <!---------------photos bas de page avec pictogramme-------------------->
 <div class="row pt-5 pb-5">
-    <img class="img-fluid" src="../public/images/BODY/ESPACE CLIENT/bas de page pictos.png" alt="pictos partenaires">
+    <img class="img-fluid" src="<?= base_url('assets/images/BODY/ESPACE CLIENT/bas de page pictos.png'); ?>" alt="pictos partenaires">
 </div>
 
 
