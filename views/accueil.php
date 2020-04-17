@@ -7,7 +7,7 @@ include("header.php");
     <div class=" col-12 d-flex justify-content-around">
         <div class="row">
             <div class="col-9 pr-5">
-                <img class="img-fluid mt-2" src="../public/images/BODY/pub_guitare.png" alt="Pub Guitare">
+                <img class="img-fluid mt-2 h-100" src="../public/images/BODY/pub_guitare.png" alt="Pub Guitare">
             </div>
             <div class="col-3 pl-5">
                 <img class="img-fluid mt-2" src="../public/images/BODY/banniere_droite_prix.png" alt="Bannière droite">
@@ -17,7 +17,7 @@ include("header.php");
 
 
     <!-- bande centrale -->
-    <div id="minus" class="row">
+    <div class="row">
         <img class="col-12 mt-5" src="../public/images/BODY/banniere_centre_4_pictos.png" alt="">
     </div>
 
@@ -25,62 +25,71 @@ include("header.php");
 
 
     <!-- Catégorie d'instruments -->
-    <section id="minus">
+    <section>
         <div class="row m-3">
-            <h3><strong>Nos catégories</strong></h3>
+            <h3 id="navy"><strong>Nos catégories</strong></h3>
         </div>
-        <div class="row row-cols-4">
-            <div class="col pr-0">
-                <a href=""><img class="img-fluid" id="imgg" src="../public/images/BODY/CATEGORIES_guitare.png" alt="CATEGORIES_guitare"></a>
-            </div>
-            <div class="col p-0">
-                <a href=""><img class="img-fluid" id="imgg" src="../public/images/BODY/CATEGORIES_batterie.png" alt="CATEGORIES_batterie"></a>
-            </div>
-            <div class="col p-0">
-                <a href=""><img class="img-fluid" id="imgg" src="../public/images/BODY/CATEGORIES_piano.png" alt="CATEGORIES_piano"></a>
-            </div>
-            <div class="col p-0">
-                <a href=""><img class="img-fluid" id="imgg" src="../public/images/BODY/CATEGORIES_micro.png" alt="CATEGORIES_micro"></a>
-            </div>
+        <div class="row row-cols-4 d-flex flex-wrap pl-3">
+
+            <!-- Guitare -->
+            <a href="">
+                <div id="img1" class="col p-0"></div>
+            </a>
+
+            <!-- Batterie -->
+            <a href="">
+                <div id="img2" class="col p-0"></div>
+            </a>
+
+            <!-- Piano -->
+            <a href="">
+                <div id="img3" class="col p-0"></div>
+            </a>
+
+            <!-- Micro -->
+            <a id="img4" href="">
+                <div class="col p-0"></div>
+            </a>
+
         </div>
-        <div class="row row-cols-4">
-            <div class="col pr-0">
-                <a href=""><img class="img-fluid" id="imgg" src="../public/images/BODY/CATEGORIES_sono.png" alt="CATEGORIES_sono"></a id="img">
-            </div>
-            <div class="col p-0">
-                <a href=""><img class="img-fluid" id="imgg" src="../public/images/BODY/CATEGORIES_cases.png" alt="CATEGORIES_cases"></a>
-            </div>
-            <div class="col p-0">
-                <a href=""><img class="img-fluid" id="imgg" src="../public/images/BODY/CATEGORIES_cable.png" alt="CATEGORIES_cable"></a>
-            </div>
-            <div class="col p-0">
-                <a href=""><img class="img-fluid" id="imgg" src="../public/images/BODY/CATEGORIES_saxo.png" alt="CATEGORIES_saxo"></a>
-            </div>
+
+        <div class="row row-cols-4  d-flex flex-wrap pl-3">
+            <!-- Sono -->
+            <a id="img5" href="">
+                <div class="col pr-0"></div>
+            </a>
+            <!-- Cases -->
+            <a id="img6" href="">
+                <div class="col p-0"></div>
+            </a>
+            <!-- Cable -->
+            <a id="img7" href="">
+                <div class="col p-0"></div>
+            </a>
+            <!-- saxo -->
+            <a id="img8" href="">
+                <div class="col p-0"></div>
+            </a>
+
         </div>
     </section>
 
 
 
     <!-- Meilleures ventes / Partenaires -->
-    <section id="minus">
+    <section>
         <div class="row pl-3 pb-3">
             <div class="col-7">
-                <h3 class="mt-5"><strong>Nos meilleurs ventes</strong></h3>
+                <h3 id="navy" class="mt-5"><strong>Nos meilleurs ventes</strong></h3>
                 <div class="row d-flex justify-content-around">
-                    <div>
-                        <img class="img-fluid" src="../public/images/BODY/TOP_VENTES_guitare.png" alt="Top vente guitare">
-                    </div>
-                    <div>
-                        <img class="img-fluid" src="../public/images/BODY/TOP_VENTES_saxo.png" alt="Top vente guitare">
-                    </div>
-                    <div>
-                        <img class="img-fluid" src="../public/images/BODY/TOP_VENTES_piano.png" alt="Top vente piano">
-                    </div>
+                    <a id="img9" href=""></a>
+                    <a id="img10" href=""></a>
+                    <a id="img11" href=""></a>
                 </div>
             </div>
             <div class="col-5">
-                <h3 class="mt-5"><strong>Nos partenaires</strong></h3>
-                <img class="img-fluid" id="reglage" src="../public/images/BODY/partenaires_4_logos.png" alt="4 logo partenaires">
+                <h3 id="navy" class="mt-5"><strong>Nos partenaires</strong></h3>
+                <img id="img12" class="img-fluid" id="reglage" src="../public/images/BODY/partenaires_4_logos.png" alt="4 logo partenaires">
             </div>
         </div>
     </section>
@@ -90,3 +99,4 @@ include("header.php");
 <?php
 include("footer.php");
 ?>
+
