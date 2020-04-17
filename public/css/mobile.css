@@ -1,0 +1,104 @@
+/* CSS RESPONSIVE mobile pour les pauvres sans ordinateur */
+
+/* Media Query pour Village green*/
+
+
+
+
+@media screen and (max-width: 1024px) {
+    #blanc {
+        background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
+        background-size: cover;
+        width: auto;
+        -webkit-box-shadow: -13px 14px 15px -3px #000000;
+        box-shadow: -13px 14px 15px -3px #000000;
+    }
+
+    /** fond blanc page d'acceuil **/
+    #blanco {
+        background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
+        background-size: cover;
+        width: auto;
+        -webkit-box-shadow: -13px 14px 15px -3px #000000;
+        box-shadow: -13px 14px 15px -3px #000000;
+    }
+
+    #bas{
+        width: auto;
+    }
+
+    #cadre_numero {
+        width: 40%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    #blanc {
+        background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
+        background-size: cover;
+        width: auto;
+        -webkit-box-shadow: -13px 14px 15px -3px #000000;
+        box-shadow: -13px 14px 15px -3px #000000;
+    }
+
+    /**fond blanc**/
+    #blanco {
+        background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
+        background-size: cover;
+        width: auto;
+        -webkit-box-shadow: -13px 14px 15px -3px #000000;
+        box-shadow: -13px 14px 15px -3px #000000;
+    }
+
+    #bas{
+        width: auto;
+    }
+
+    #cadre_numero {
+        width: 40%;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 360px) {
+
+    #blanc {
+        background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
+        background-size: cover;
+        width: auto;
+        -webkit-box-shadow: -13px 14px 15px -3px #000000;
+        box-shadow: -13px 14px 15px -3px #000000;
+    }
+
+    /** fond blanc page d'acceuil **/
+    #blanco {
+        background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
+        background-size: cover;
+        width: auto;
+        -webkit-box-shadow: -13px 14px 15px -3px #000000;
+        box-shadow: -13px 14px 15px -3px #000000;
+    }
+
+    #bas{
+        width: auto;
+    }
+
+    #cadre_numero {
+        width: 40%;
+    }
+
+}
