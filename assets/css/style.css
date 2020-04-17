@@ -95,5 +95,5 @@ input {
 
 
 /* affiche le texte en corps 16px lorsque le média dispose d'une largeur d'affichage au minimum de 780px */
-@media (max-width: 1024px) {
-    label {}
+/* @media (max-width: 1024px) {
+    label {} */

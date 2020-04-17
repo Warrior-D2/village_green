@@ -5,7 +5,7 @@
 <!-- Footer pied de page -->
 <footer class="row pt-5 pb-3">
     <div class="col-12 p-0">
-        <img id="bas" class="img-fluid" src="<?= base_url('assets/images/FOOTER/footer_revisiter.png); ?>" alt="">
+        <img id="bas" class="img-fluid" src="<?= base_url('assets/images/FOOTER/footer_revisiter.png'); ?>" alt="">
     </div>
 </footer>
 </div>
