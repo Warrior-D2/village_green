@@ -11,4 +11,10 @@
         {
             $this->load->view('accueil');
         }
+
+        public function formulaire()
+        {
+            $this->load->view('inscription');
+        }
     }
+?>
