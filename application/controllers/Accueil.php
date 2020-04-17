@@ -4,7 +4,8 @@
         
     defined('BASEPATH') OR exit('No direct script access allowed');
         
-    class Produits extends CI_Controller 
+
+    class Accueil extends CI_Controller 
     {
         public function index()
         {
