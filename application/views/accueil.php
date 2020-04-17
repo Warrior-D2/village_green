@@ -26,12 +26,15 @@ $title ='Village Green : Accueil';
 
 
 
+
     <!-- Catégorie d'instruments -->
     <section>
         <div class="row m-3">
             <h3 id="navy"><strong>Nos catégories</strong></h3>
         </div>
+
         <div class="row row-cols-4 d-flex flex-wrap pl-3">
+
 
             <!-- Guitare -->
             <a href="">
@@ -91,6 +94,7 @@ $title ='Village Green : Accueil';
             </div>
             <div class="col-5">
                 <h3 id="navy" class="mt-5"><strong>Nos partenaires</strong></h3>
+
                 <img id="img12" class="img-fluid" id="reglage" src="<?= base_url('assets/images/BODY/partenaires_4_logos.png'); ?>" alt="4 logo partenaires">
             </div>
         </div>

@@ -1,65 +1,108 @@
 
-/* CSS RESPONSIVE mobile pour les pauvres sans ordinateur */ 
+/* CSS RESPONSIVE mobile pour les pauvres sans ordinateur */
 
 /* Media Query pour Village green*/
-@media screen and (max-width: 768px) {
 
-    #logo {
+
+
+
+@media screen and (max-width: 1024px) {
+    #blanc {
+        background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
+        background-size: cover;
         width: auto;
-        height: 190px;
+        -webkit-box-shadow: -13px 14px 15px -3px #000000;
+        box-shadow: -13px 14px 15px -3px #000000;
     }
 
-    #nav2 a {
-        padding-right: 30px;
-        margin: auto;
-        color: white;
-        font-size: 15px;
-        font-weight: bold;
-        
-    }
-    #nav3 {
-        display: none;
-    }
-    
-}
-
-
-
-
-@media screen and (max-width: 415px){
-    #logo{
-        display: none;
-    }
-
-    #nav1 a{
-        padding-right: 6px;
-    }
-
-    #nav2 a{
-        padding-right: 10px;
-        font-size: 15px;
-        color: seashell;
-
-    }
-    #nav3 a{
-        display: none;
-    }
-}
-
-
-
-
-
-
-@media screen and (max-width: 411px) {
-
-    body {
-        background-image: url('assets/images/stop_it.jpg') no-repeat !important;
-    }
+    /** fond blanc page d'acceuil **/
     #blanco {
-        display: none;
+        background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
+        background-size: cover;
+        width: auto;
+        -webkit-box-shadow: -13px 14px 15px -3px #000000;
+        box-shadow: -13px 14px 15px -3px #000000;
     }
-    #minus {
-        display: none;
+
+    #bas{
+        width: auto;
     }
+
+    #cadre_numero {
+        width: 40%;
+    }
+
 }
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    #blanc {
+        background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
+        background-size: cover;
+        width: auto;
+        -webkit-box-shadow: -13px 14px 15px -3px #000000;
+        box-shadow: -13px 14px 15px -3px #000000;
+    }
+
+    /**fond blanc**/
+    #blanco {
+        background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
+        background-size: cover;
+        width: auto;
+        -webkit-box-shadow: -13px 14px 15px -3px #000000;
+        box-shadow: -13px 14px 15px -3px #000000;
+    }
+
+    #bas{
+        width: auto;
+    }
+
+    #cadre_numero {
+        width: 40%;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 360px) {
+
+    #blanc {
+        background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
+        background-size: cover;
+        width: auto;
+        -webkit-box-shadow: -13px 14px 15px -3px #000000;
+        box-shadow: -13px 14px 15px -3px #000000;
+    }
+
+    /** fond blanc page d'acceuil **/
+    #blanco {
+        background: url('../images/BACKGROUND/bande_fond_teste.png') no-repeat;
+        background-size: cover;
+        width: auto;
+        -webkit-box-shadow: -13px 14px 15px -3px #000000;
+        box-shadow: -13px 14px 15px -3px #000000;
+    }
+
+    #bas{
+        width: auto;
+    }
+
+    #cadre_numero {
+        width: 40%;
+    }
+
+}
+
