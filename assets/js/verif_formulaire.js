@@ -14,8 +14,8 @@ function test_input($data)
 // déclaration du formulaire
 var form = document.getElementById("form");
 
-form.addEventListener("submit", function (event) {
-    event.preventDefault();
+form.addEventListener("submit", function (event) 
+{
     // récupération des valeurs des champs input avec l'ID
     var email = document.getElementById("email");
     var errorEmail = document.getElementById("errorEmail");
@@ -138,7 +138,6 @@ form.addEventListener("submit", function (event) {
 
 
     //Vérification du Nom
-
     if (nom.value == "") {
         errorNom.innerHTML = "Ce champs est requis";
         errorNom.style.color = "red";
@@ -154,7 +153,6 @@ form.addEventListener("submit", function (event) {
 
 
     //Vérification de l'adresse
-
     if (adresse.value == "") {
         errorAdresse.innerHTML = "Ce champs est requis";
         errorAdresse.style.color = "red";
@@ -266,5 +264,6 @@ form.addEventListener("submit", function (event) {
         errorTelephone.style.color = "green";
     }
 
-});
+}
+);
 

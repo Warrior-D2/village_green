@@ -1,11 +1,12 @@
-
 <?php
-require("header.php");
+$title ='Village Green : Inscription';
 ?>
+
+<?php ob_start(); ?>
 
 
 <!-- <section id="blanco" class=" pt-5 "> -->
-<form action="#" method="POST" id="form">
+<?php echo form_open(); ?>
     <!------- Création des identifiant de connexion-------->
     <fieldset class="mb-5">
         <legend class="text-center h1 mb-5">Créez vos identifiants</legend>
@@ -13,7 +14,7 @@ require("header.php");
         <div class="form-group row">
             <label for="email" class="col-lg-2 col-md-2 text-right">E-mail</label>
             <div class="col-lg-3 col-md-3">
-                <input type="email" class="form-control" id="email">
+                <input type="email" class="form-control" name="cli_email">
                 <span id="errorEmail"></span>
             </div>
         </div>
@@ -21,13 +22,13 @@ require("header.php");
         <div class="form-group row">
             <label for="password1" class="col-lg-2 col-md-2 text-right" >Créez votre<br>mot de passe</label>
             <div class="col-lg-3 col-md-3">
-                <input type="password" class="form-control" id="password1">
+                <input type="password" class="form-control" name="cli_password1">
                 <span id="errorPassword1"></span>
             </div>
 
-            <label for="passeword2" class="col-lg-2 col-md-2 text-right">Confirmation<br>mot de passe</label>
+            <label for="password2" class="col-lg-2 col-md-2 text-right">Confirmation<br>mot de passe</label>
             <div class="col-lg-3 col-md-3">
-                <input type="password" class="form-control" id="password2">
+                <input type="password" class="form-control" name="cli_password2">
                 <span id="errorPassword2"></span>
             </div>
         </div>
@@ -42,7 +43,7 @@ require("header.php");
                 <div class="form-group row">
                     <label for="prenom" class="col-lg-4 col-md-4 text-right">Prénom</label>
                     <div class="col-lg-6 col-sm-6">
-                        <input type="text" class="form-control" id="prenom">
+                        <input type="text" class="form-control" name="cli_prenom">
                         <span id="errorPrenom"></span>
                     </div>
                 </div>
@@ -50,7 +51,7 @@ require("header.php");
                 <div class="form-group row">
                     <label for="nom" class="col-lg-4 col-md-4 text-right">Nom</label>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" class="form-control" id="nom">
+                        <input type="text" class="form-control" name="cli_nom">
                         <span id="errorNom"></span>
                     </div>
                 </div>
@@ -58,7 +59,7 @@ require("header.php");
                 <div class="form-group row">
                     <label for="adresse1" class="col-lg-4 col-md-4 mb-0 text-right">Adresse</label>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" class="form-control" id="adresse">
+                        <input type="text" class="form-control" name="cli_adresse">
                         <span id="errorAdresse"></span>
                     </div>
                 </div>
@@ -66,7 +67,7 @@ require("header.php");
                 <div class="form-group row">
                     <label for="complement" class="col-lg-4 col-md-4 mb-0 text-right">Complément<br>d'adresse</label>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" class="form-control" id="complement">
+                        <input type="text" class="form-control" name="cli_complement">
                         <span id="errorComplement"></span>
                     </div>
                 </div>
@@ -74,7 +75,7 @@ require("header.php");
                 <div class="form-group row">
                     <label for="codepostal" class="col-lg-4 col-md-4 text-right">Code postal</label>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" class="form-control" id="codepostal">
+                        <input type="text" class="form-control" name="cli_code">
                         <span id="errorCode"></span>
                     </div>
                 </div>
@@ -82,7 +83,7 @@ require("header.php");
                 <div class="form-group row">
                     <label for="ville" class="col-lg-4 col-md-4 text-right">Ville</label>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" class="form-control" id="ville">
+                        <input type="text" class="form-control" name="cli_ville">
                         <span id="errorVille"></span>
                     </div>
                 </div>
@@ -90,7 +91,7 @@ require("header.php");
                 <div class="form-group row">
                     <label for="pays" class="col-lg-4 col-md-4 text-right">Pays</label>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" class="form-control" id="pays">
+                        <input type="text" class="form-control" name="cli_pays">
                         <span id="errorPays"></span>
                     </div>
                 </div>
@@ -102,7 +103,7 @@ require("header.php");
                 <div class="form-group row">
                     <label for="portable" class="col-lg-4 col-md-4 text-right">Numéro de Portable</label>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" class="form-control " id="portable">
+                        <input type="text" class="form-control " name="cli_portable">
                         <span id="errorPortable"></span>
                     </div>
                 </div>
@@ -110,7 +111,7 @@ require("header.php");
                 <div class="form-group row">
                     <label for="telephone" class="col-lg-4 col-md-4 mb-0 text-right">Numéro de téléphone fixe</label>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" class="form-control" id="telephone">
+                        <input type="text" class="form-control" name="cli_fixe">
                         <span id="errorTelephone"></span>
                     </div>
                 </div>
@@ -130,7 +131,8 @@ require("header.php");
 </div>
 
 
-<?php
-require("footer.php");
-?>
+<?php $content = ob_get_clean(); ?>
+
+<?php require('template.php'); ?>
+
 
