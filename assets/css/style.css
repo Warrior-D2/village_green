@@ -1,4 +1,3 @@
-
 /* Feuille de style CSS de Village green ! */
 
 /* ============ Style general ============*/
@@ -16,6 +15,7 @@ body {
 .popover-body {
     -webkit-box-shadow: 1px 0px 14px 8px rgba(0, 0, 0, 0.8);
     box-shadow: 1px 0px 14px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
 }
 
 
@@ -56,10 +56,10 @@ body {
 
 /** image footer **/
 
-#bas {
+/* #bas {
     -webkit-box-shadow: -8px 1px 7px 0px rgba(0, 0, 0, 0.8);
     box-shadow: -8px 1px 7px 0px rgba(0, 0, 0, 0.8);
-}
+} */
 
 
 /*============ Accueil CSS ============ */
@@ -84,14 +84,15 @@ body {
 /* Guitare */
 #img1 {
     background-image: url("../images/BODY/CATEGORIES_guitare.png");
-    width: 292px;
+    width: 278px; 
     height: 180px;
-    
+
 }
-#img1:hover{
+
+#img1:hover {
     background-image: url("../images/BODY/CATEGORIES_ROLL_OVER_guitare.png");
 
-    width: 292px;
+    width: 278px;
     height: 180px;
 }
 
@@ -99,84 +100,92 @@ body {
 /*  batterie */
 #img2 {
     background-image: url("../images/BODY/CATEGORIES_batterie.png");
-    width: 292px;
+    width: 278px;
     height: 180px;
 }
-#img2:hover{
+
+#img2:hover {
     background: url("../images/BODY/CATEGORIES_ROLL_OVER_batterie.png");
-    width: 292px;
+    width: 278px;
     height: 180px;
 }
 
 /* Piano */
 #img3 {
     background-image: url("../images/BODY/CATEGORIES_piano.png");
-    width: 292px;
+    width: 277px;
     height: 180px;
 }
-#img3:hover{
+
+#img3:hover {
     background: url("../images/BODY/CATEGORIES_ROLL_OVER_piano.png");
-    width: 292px;
+    width: 277px;
     height: 180px;
 }
 
 /* micro */
 #img4 {
     background-image: url("../images/BODY/CATEGORIES_micro.png");
-    width: 292px;
+    width: 277px;
     height: 180px;
 }
-#img4:hover{
+
+#img4:hover {
     background: url("../images/BODY/CATEGORIES_ROLL_OVER_micro.png");
-    width: 292px;
+    width: 277px;
     height: 180px;
 }
+
 /* === sur la 2em ligne === */
 /* Sono */
 #img5 {
     background-image: url("../images/BODY/CATEGORIES_sono.png");
-    width: 292px;
+    width: 278px;
     height: 180px;
 }
-#img5:hover{
+
+#img5:hover {
     background: url("../images/BODY/CATEGORIES_ROLL_OVER_sono.png");
-    width: 292px;
+    width: 278px;
     height: 180px;
 }
 
 /* Cases */
 #img6 {
     background-image: url("../images/BODY/CATEGORIES_cases.png");
-    width: 292px;
+    width: 278px;
     height: 180px;
 }
+
 #img6:hover {
     background: url("../images/BODY/CATEGORIES_ROLL_OVER_cases.png");
-    width: 292px;
+    width: 277px;
     height: 180px;
 }
 
 /* Cable */
 #img7 {
     background-image: url("../images/BODY/CATEGORIES_cable.png");
-    width: 292px;
+    width: 278px;
     height: 180px;
 }
+
 #img7:hover {
     background: url("../images/BODY/CATEGORIES_ROLL_OVER_access.png");
-    width: 292px;
+    width: 277px;
     height: 180px;
 }
 
 /* Saxo */
 #img8 {
     background-image: url("../images/BODY/CATEGORIES_saxo.png");
-    width: 292px;
+    width: 277px;
     height: 180px;
 }
+
 #img8:hover {
     background: url("../images/BODY/CATEGORIES_ROLL_OVER_saxo.png");
-    width: 292px;
+    width: 277px;
     height: 180px;
 }
 
@@ -188,7 +197,8 @@ body {
     width: 165px;
     height: 304px;
 }
-#img9:hover{
+
+#img9:hover {
     background: url("../images/BODY/TOP_VENTES_ROLL_OVER_guitare.png") center;
     width: 165px;
     height: 304px;
@@ -200,19 +210,21 @@ body {
     width: 165px;
     height: 304px;
 }
-#img10:hover{
+
+#img10:hover {
     background: url("../images/BODY/TOP_VENTES_ROLL_OVER_saxo.png") no-repeat;
     width: 165px;
     height: 304px;
 }
 
 
-#img11{
+#img11 {
     background-image: url("../images/BODY/TOP_VENTES_piano.png");
     width: 165px;
     height: 304px;
 }
-#img11:hover{
+
+#img11:hover {
     background: url("../images/BODY/TOP_VENTES_ROLL_OVER_piano.png");
     width: 165px;
     height: 304px;
@@ -220,7 +232,7 @@ body {
 
 
 /* ============ Reglage "Nos Partenaires" ============ */
-#img12{
+#img12 {
     height: 304px;
 }
 
@@ -240,16 +252,32 @@ body {
 legend {
     color: rgb(0, 0, 88);
 }
-
-input {
+/* input du popovers'espace client' */
+.inpop {
     background-color: rgb(197, 197, 197) !important;
     border-radius: 0.5rem !important;
 }
+
+/* ====== input au niveau de "offres exclusives" ====== */
+
+#valider{
+    background-color: orangered;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+#Email{
+    background-color: rgb(197, 197, 197) !important;
+    border-radius: 0.5rem !important;
+    
+}
+ /* ====== ====== */
 
 #orange {
     color: rgb(221, 93, 42);
 }
 
+/* euh elle sert a quoi cette id ? */
 #cadre_numero {
     background-color: #BBBBBB;
 }
@@ -258,3 +286,45 @@ input {
 /* @media (max-width: 1024px) {
     label {} */
 
+
+/* ============ FOOTER CSS ============ */
+
+#microimage{
+    width: 100px;
+    height: 60px;
+}
+
+#utiles{
+    margin-left:40px ;
+}
+
+#non-stop{
+    font-size: 15px;
+}
+
+#footer {
+    background-image: url('../images/BACKGROUND/VG_test.png');
+    background-size: cover;
+    margin-top: 20px;
+    -webkit-box-shadow: -4px -1px 15px 5px #000000;
+    box-shadow: -4px -1px 15px 5px #000000;
+    color: white;
+}
+
+.orange {
+    color: orangered;
+}
+
+#list{
+    list-style: none;
+    margin: 0px;
+}
+
+#miniature{
+    color: white;
+    background-color: black;
+    margin: 0px;
+    font-size: 12px;
+    -webkit-box-shadow: -5px 5px 15px 2px #000000;
+    box-shadow: -5px 5px 15px 2px #000000;
+}
